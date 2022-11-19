@@ -52,17 +52,18 @@ img {
   width: 1px;
 }
 
+/* Loading animation */
 .loader {
   position: absolute;
   top: 50%;
-  left: 45%;
+  left: 50%;
   z-index: 99;
   border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 16px solid #3498db;
   width: 120px;
   height: 120px;
-  -webkit-animation: spin 2s linear; /* Safari */
+  -webkit-animation: spin 2s linear;
   animation: spin 2s linear;
 }
 
@@ -83,6 +84,7 @@ img {
     transform: rotate(360deg);
   }
 }
+/* Loading animation */
 
 .search {
   z-index: 999;
@@ -168,7 +170,7 @@ select option {
 }
 
 .card img:hover {
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 
 .card li,
