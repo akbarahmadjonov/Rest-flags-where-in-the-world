@@ -5,6 +5,7 @@ elBtn.addEventListener('click', function () {
     elBody.classList.toggle('mode');
 })
 
+// Loader animation
 const loading = document.querySelector('.loader');
 const content = document.querySelector('body');
 setTimeout(() => {
