@@ -28,6 +28,8 @@ body {
   flex-direction: column;
   height: 100%;
   margin: 0;
+  opacity: 0.5;
+  transition: 0.2s;
 }
 
 main {
@@ -48,6 +50,38 @@ img {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  z-index: 99;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear; /* Safari */
+  animation: spin 2s linear;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .search {
@@ -123,6 +157,18 @@ select option {
 
 .card {
   background-color: var(--main-bg);
+}
+
+.card:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card:active {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.card img:hover {
+  transform: scale(1.1);
 }
 
 .card li,
